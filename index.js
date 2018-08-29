@@ -18,7 +18,7 @@ closeModal.addEventListener("click", function() {
   popUpLayer.style.display = 'none';
 })
 
-let popUpSeconds = 40;
+let popUpSeconds = 30;
 
 //trigger popup after seconds variable
 let popUpFun = window.setInterval(function() {
@@ -28,15 +28,7 @@ let popUpFun = window.setInterval(function() {
 
 }, popUpSeconds * 1000);
 
-let popUpSeconds = 40;
 
-//trigger popup after seconds variable
-let popUpFun = window.setInterval(function() {
-  popUpLayer.style.display = 'flex';
-
-  window.clearInterval(popUpFun);
-
-}, popUpSeconds * 1000);
 
 ///////////////////
 
@@ -177,89 +169,4 @@ for (let i = 0; i < acc.length; i++) {
 
 
     });
-}
-/**************
-Footer
-**************/
-
-.footer {
-  height: 30vh;
-  margin: 0;
-  background: #34495e;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: roboto;
-}
-
-.container {
-  width: 80%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.footer-cta {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-cta p {
-  margin: 0;
-}
-
-h3 {
-  margin-top: 0;
-}
-
-.footer-links {
-  text-align: left;
-}
-
-.footer-links li {
-  list-style: none;
-}
-
-
-.footer-links a {
-  text-decoration: none;
-  color: white;
-  text-align: left;
-}
-
-.footer-copyright {
-  height: 5vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #2c3e50;
-  color: white;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.more-links {
-  cursor: pointer;
-}
-
-.nav-btn.right {
-  margin-left: 80%; /*made this smaller*/
-  transition: all 300ms;
-}
-
-
-.nav-links {
-  height: 50px;
-  width: 100%;
-  background: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  font-family: roboto; /*made font-family roboto*/
 }
